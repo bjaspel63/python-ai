@@ -1,0 +1,17 @@
+def recommend_movie(genre):
+    movies = {
+        'action': ['Mad Max', 'Die Hard', 'The Dark Knight'],
+        'comedy': ['Superbad', 'The Hangover', 'Dumb and Dumber'],
+        'drama': ['The Shawshank Redemption', 'Forrest Gump', 'The Godfather'],
+    }
+    
+    if genre in movies:
+        print(f"Based on your preference for {genre}, we recommend these movies:")
+        for movie in movies[genre]:
+            print(f"- {movie}")
+    else:
+        print("Sorry, we don't have recommendations for that genre.")
+
+# Test
+user_genre = input("Enter your favorite genre (action, comedy, drama): ").lower()
+recommend_movie(user_genre)
