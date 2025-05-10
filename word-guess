@@ -1,0 +1,11 @@
+def word_guessing_game():
+    words = ['python', 'java', 'ruby', 'html', 'css']
+    print("I'm thinking of a programming language. Try to guess which one!")
+    guess = input("Enter your guess: ").lower()
+    
+    if guess in words:
+        print(f"AI says: Correct! I was thinking of '{guess}'.")
+    else:
+        print("AI says: Hmm, not quite. Try again!")
+        
+word_guessing_game()
