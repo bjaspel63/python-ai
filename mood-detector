@@ -1,0 +1,11 @@
+def happiness_detector():
+    sentence = input("Tell me how you're feeling today: ").lower()
+    
+    if 'happy' in sentence or 'good' in sentence:
+        print("AI says: You're feeling happy!")
+    elif 'sad' in sentence or 'bad' in sentence:
+        print("AI says: You're feeling sad!")
+    else:
+        print("AI says: I couldn't understand your mood. Try again.")
+        
+happiness_detector()
