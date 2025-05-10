@@ -1,0 +1,13 @@
+import time
+
+def snack_suggester():
+    hour = int(input("Enter the current hour (24-hour format): "))
+    
+    if hour < 12:
+        print("AI says: How about a nice breakfast snack, like toast or cereal?")
+    elif hour < 18:
+        print("AI says: How about an afternoon snack, like chips or fruit?")
+    else:
+        print("AI says: It's evening! Maybe some popcorn or chocolate?")
+        
+snack_suggester()
