@@ -1,4 +1,5 @@
 pwd = input("Enter a password: ")
+print ("Password: " + "*" * len(pwd))
 
 if len(pwd) < 4:
     print("Very weak ❌")
