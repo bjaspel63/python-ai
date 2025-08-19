@@ -6,6 +6,6 @@ while True:
     if ask == "exit":
         break
     elif ask == "yes":
-        print(f"Great! I'm {name}.")
+        print(f"Yes! It's {name}.")
     elif ask == "no":
         print(f"Oops! It's {name}.")
